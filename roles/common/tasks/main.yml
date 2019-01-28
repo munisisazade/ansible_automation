@@ -1,0 +1,4 @@
+---
+- git:
+    repo: 'https://github.com/munisisazade/algorithms'
+    dest: '/root/testing_repo'

@@ -1,0 +1,9 @@
+ansible:
+  # image: philm/ansible_playbook
+  build: .
+  container_name: ansible
+  volumes:
+    # - ~/.ssh/id_rsa:/root/.ssh/id_rsa
+    # - ~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub
+    - ~/.ssh:/root/.ssh
+    - .:/ansible/playbooks

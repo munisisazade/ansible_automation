@@ -1,0 +1,16 @@
+---
+- name: Elanevi test
+  hosts: elanevi
+  vars:
+    test: testing
+    munis: asdjasd
+
+
+  roles:
+    - roles/common # common tasks
+    - roles/python3/install # installing python2 and python3
+#    - roles/
+
+
+  tasks:
+    - debug: msg="Provision was completed successfully!"
